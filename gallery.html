@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gallery | Star Hearts Foundation</title>
 <meta name="description" content="Photos from Star Hearts: training in Kitende, match days, awards and the young players the foundation supports.">
-<meta name="theme-color" content="#0e2257">
+<meta name="theme-color" content="#06060c">
+<script>document.documentElement.classList.add("js")</script>
 <link rel="canonical" href="https://star-hearts-foundation.vercel.app/gallery.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Star Hearts Foundation">
@@ -21,7 +22,11 @@
 <link rel="stylesheet" href="css/site.css">
 
 </head>
-<body class="">
+<body>
+<div class="scroll-bar" aria-hidden="true"></div>
+<div class="aurora" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<canvas id="crest-canvas" aria-hidden="true"></canvas>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
@@ -44,7 +49,7 @@
   </div>
 </section>
 
-<section class="dark" aria-label="3D photo ring" style="padding: 20px 0 72px">
+<section class="dark" data-crest="back" aria-label="3D photo ring" style="padding: 20px 0 72px">
   <div class="ring-stage" tabindex="0" aria-label="Photo ring. Use the left and right arrow keys to turn it.">
     <div class="ring">
       <a class="ring-card" href="img/p20.webp" data-lightbox data-caption="On the training field in Kitende" data-alt="A young player in Star Hearts kit smiles on the training field"><img src="img/p20-s.webp" alt="A young player in Star Hearts kit smiles on the training field" loading="lazy" decoding="async"></a>
@@ -110,6 +115,7 @@
   </div>
 </section>
 </main>
+<div class="marquee" aria-hidden="true"><div class="marquee-track"><span>A roof</span><i></i><span>A meal</span><i></i><span>A school place</span><i></i><span>A family that loves them</span><i></i><span>A roof</span><i></i><span>A meal</span><i></i><span>A school place</span><i></i><span>A family that loves them</span><i></i></div></div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="foot-grid">

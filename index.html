@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Star Hearts Foundation | Off the streets, onto the pitch, back to school</title>
 <meta name="description" content="Star Hearts Foundation gives talented children in Uganda football, a school place, a roof over their heads and a family that loves them. Born out of Star Hearts Sports Academy, Kitende.">
-<meta name="theme-color" content="#0e2257">
+<meta name="theme-color" content="#06060c">
+<script>document.documentElement.classList.add("js")</script>
 <link rel="canonical" href="https://star-hearts-foundation.vercel.app/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Star Hearts Foundation">
@@ -21,7 +22,11 @@
 <link rel="stylesheet" href="css/site.css">
 
 </head>
-<body class="">
+<body>
+<div class="scroll-bar" aria-hidden="true"></div>
+<div class="aurora" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<canvas id="crest-canvas" aria-hidden="true"></canvas>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
@@ -38,7 +43,6 @@
 </header>
 <main id="main">
 <section class="hero" aria-labelledby="hero-title">
-  <canvas id="hero-canvas" aria-label="A 3D football on a floodlit pitch. Drag to spin it." role="img"></canvas>
   <img class="hero-fallback" src="img/logo.png" alt="" width="346" height="422">
   <div class="wrap">
     <h1 id="hero-title"><span>Off the streets.</span><span>Onto the pitch.</span><span>Back to school.</span></h1>
@@ -51,9 +55,10 @@
   <div class="hero-foot">
     <div class="wrap">
       <a class="origin" href="https://www.starheartsacademy.com" target="_blank" rel="noopener"><img src="img/logo-180.png" alt="" width="30" height="36">Born out of Star Hearts Sports Academy, Kitende</a>
-      <span class="drag-hint"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8 13V5.5a1.5 1.5 0 013 0V11m0-1.5a1.5 1.5 0 013 0V11m0-.5a1.5 1.5 0 013 0V12m0-.5a1.5 1.5 0 013 0V16a6 6 0 01-6 6h-1.5a6 6 0 01-4.8-2.4L4.6 15.6a1.5 1.5 0 012.3-1.9L8 15"/></svg>Drag the ball to spin it</span>
+      <span class="drag-hint"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8 13V5.5a1.5 1.5 0 013 0V11m0-1.5a1.5 1.5 0 013 0V11m0-.5a1.5 1.5 0 013 0V12m0-.5a1.5 1.5 0 013 0V16a6 6 0 01-6 6h-1.5a6 6 0 01-4.8-2.4L4.6 15.6a1.5 1.5 0 012.3-1.9L8 15"/></svg>Drag the crest to spin it</span>
     </div>
   </div>
+  <span class="scroll-cue" aria-hidden="true"></span>
 </section>
 
 <section class="section">
@@ -62,7 +67,9 @@
   </div>
 </section>
 
-<section class="section dark" aria-labelledby="journey-title">
+<div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Off the streets</span><i></i><span>Onto the pitch</span><i></i><span>Back to school</span><i></i><span>Into a family</span><i></i><span>Off the streets</span><i></i><span>Onto the pitch</span><i></i><span>Back to school</span><i></i><span>Into a family</span><i></i></div></div>
+
+<section class="section dark" data-crest="back" aria-labelledby="journey-title">
   <div class="wrap">
     <div class="sec-head">
       <h2 id="journey-title" class="h-l">From the street to a family, in five steps</h2>
@@ -151,6 +158,7 @@
   </div>
 </section>
 </main>
+<div class="marquee" aria-hidden="true"><div class="marquee-track"><span>A roof</span><i></i><span>A meal</span><i></i><span>A school place</span><i></i><span>A family that loves them</span><i></i><span>A roof</span><i></i><span>A meal</span><i></i><span>A school place</span><i></i><span>A family that loves them</span><i></i></div></div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="foot-grid">
